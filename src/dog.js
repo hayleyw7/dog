@@ -6,6 +6,14 @@ class Dog {
     this.energyLevel = 5;
   }
 
+  // make a dog class
+    // make a constructor for an object
+      // add parameters:
+        // name
+        // age
+        // hungry = true
+        // energy = 5
+
   eat() {
     if(this.hungry) {
       this.hungry = false;
@@ -13,6 +21,12 @@ class Dog {
       return `I refuse to eat.`;
     }
   }
+
+  // make eat() method
+    // if hungry
+      // no longer hungry
+    // if not hungry
+      // refuse to eat
 
   fetchBall() {
     if(this.energyLevel > 3) {
