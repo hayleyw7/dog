@@ -1,8 +1,9 @@
 // var Dog = require("./dog.js");
 
 class Person {
-  constructor() {
-
+  constructor(firstName, dog) {
+    this.name = firstName;
+    this.dog = dog;
   }
 
 

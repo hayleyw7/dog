@@ -4,12 +4,16 @@ var assert = require('chai').assert;
 
 describe("Person", function() {
 
-  it.skip('should have a name and a dog', function() {
+  it('should have a name and a dog', function() {
     var luna = new Dog({ name: 'Luna', age: 3 });
+    // 2 args: need 2 params in constructor - firstName, dog
     var trisha = new Person('Trisha', luna);
+    // this.name property - VALUE: 1st arg/param
 
     assert.equal(trisha.name, 'Trisha');
+    // this.dog property - VALUE: 2nd arg/param
     assert.instanceOf(trisha.dog, Dog);
+    // how will i make dog.name? needs to be name of property of dog instance
     assert.equal(trisha.dog.name, 'Luna');
   })
 
